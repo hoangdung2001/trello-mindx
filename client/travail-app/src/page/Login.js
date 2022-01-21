@@ -47,6 +47,7 @@ const Login = () => {
             ></input>
             <input
               className="password input"
+              type={"password"}
               placeholder="Nhập mật khẩu"
               name="password"
             ></input>
