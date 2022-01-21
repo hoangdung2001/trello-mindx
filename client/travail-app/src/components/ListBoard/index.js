@@ -8,7 +8,9 @@ export default function ListBoard() {
   const [boards, setBoards] = useState([]);
   useEffect(() => {
     const getBoard = async () => {
-      const boards = await axios.get("http://localhost:9000/api/board");
+      const boards = await axios.get(
+        `${process.env.REACT_APP_BASE_URL}/api/board`
+      );
       setBoards(boards.data);
     };
     getBoard();

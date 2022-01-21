@@ -34,7 +34,7 @@ function BoardContent() {
   useEffect(() => {
     const get = async (boardId) => {
       const board = await axios.get(
-        `http://localhost:9000/api/board/${boardId}`
+        `${process.env.REACT_APP_BASE_URL}/api/board/${boardId}`
       );
       return board;
     };
@@ -60,7 +60,10 @@ function BoardContent() {
         columns,
       };
       console.log(updatedBoard);
-      axios.put(`http://localhost:9000/api/board/${board.id}`, updatedBoard);
+      axios.put(
+        `${process.env.REACT_APP_BASE_URL}/api/board/${board.id}`,
+        updatedBoard
+      );
     }
   }, [board, columns]);
 

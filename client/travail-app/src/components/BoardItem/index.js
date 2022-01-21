@@ -59,7 +59,7 @@ export default function BoardItem({ setCreate, create }) {
       <form
         onSubmit={async (e) => {
           const createBoard = await axios.post(
-            "http://localhost:9000/api/board",
+            `${process.env.REACT_APP_BASE_URL}/api/board`,
             {
               title: e.target["title"].value,
               background: bg,

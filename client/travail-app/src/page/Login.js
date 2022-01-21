@@ -9,12 +9,12 @@ const Login = () => {
     const username = e.target["email"].value;
     const password = e.target["password"].value;
     const token = await axios.get(
-      `http://localhost:9000/api/auth/login/${username}`
+      `${process.env.REACT_APP_BASE_URL}/api/auth/login/${username}`
     );
     console.log(token);
     if (token) {
       const login = await axios.post(
-        "http://localhost:9000/api/auth/login",
+        `${process.env.REACT_APP_BASE_URL}/api/auth/login`,
         {
           username,
           password,

@@ -5,7 +5,6 @@ import { cloneDeep } from "lodash";
 import "./Column.scss";
 import Card from "../Card/Card";
 import ConfirmModal from "../Common/ConfirmModal";
-import axios from "axios";
 import { MODAL_ACTIONS_CONFIRM } from "../../utilities/constants";
 import { mapOrder } from "../../utilities/sorts";
 

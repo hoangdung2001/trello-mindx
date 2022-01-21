@@ -8,10 +8,13 @@ const Register = () => {
     e.preventDefault();
     const username = e.target["email"].value;
     const password = e.target["password"].value;
-    const register = await axios.post("http://localhost:9000/api/auth/signup", {
-      username,
-      password,
-    });
+    const register = await axios.post(
+      `${process.env.REACT_APP_BASE_URL}/api/auth/signup`,
+      {
+        username,
+        password,
+      }
+    );
     if (register.data) {
       navigate("/", { replace: true });
     }
