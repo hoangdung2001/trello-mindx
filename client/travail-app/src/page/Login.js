@@ -26,7 +26,7 @@ const Login = () => {
         }
       );
       if (login) {
-        navigate(`/`, { replace: true });
+        navigate(`/home`, { replace: true });
       }
     }
   };

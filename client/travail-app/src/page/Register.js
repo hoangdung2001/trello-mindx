@@ -16,7 +16,7 @@ const Register = () => {
       }
     );
     if (register.data) {
-      navigate("/", { replace: true });
+      navigate("/home", { replace: true });
     }
   };
   return (
