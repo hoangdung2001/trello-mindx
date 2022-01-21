@@ -1,0 +1,85 @@
+.logo-trello {
+  width: 197px;
+  height: 43px;
+  margin: 50px 650px;
+}
+#form-login {
+  width: 400px;
+  height: 590px;
+  margin: auto;
+}
+#login {
+  border: 1px solid rgb(223, 225, 230);
+  text-align: center;
+  padding: 20px 40px;
+  box-shadow: rgb(0 0 0 / 10%) 0 0 10px;
+  border-radius: 5px;
+  background-color: #fff;
+}
+.input {
+  display: block;
+  width: 100%;
+  padding: 15px 10px;
+  border-radius: 5px;
+}
+.email {
+  margin-bottom: 20px;
+}
+.submit {
+  margin-top: 20px;
+  width: 320px;
+  height: 35px;
+  background-color: #61bd4f;
+  color: #fff;
+  font-size: medium;
+  border-radius: 5px;
+}
+.login-by {
+  border: 1px solid rgb(223, 225, 230);
+  box-shadow: rgb(0 0 0 / 10%) 0 0 10px;
+  color: #505f79;
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 14px;
+  text-decoration: none;
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#login-google {
+  background: url(https://d2k1ftgv7pobq7.cloudfront.net/meta/c/p/res/images/8215f6659adc202403198fef903a447e/sign-in-with-google.svg)
+    0 50% no-repeat;
+  display: inline-block;
+  width: 25px;
+  height: 20px;
+}
+#login-microsoft {
+  background: url(https://d2k1ftgv7pobq7.cloudfront.net/meta/c/p/res/images/72ece804e5285ab6507e2406157cda3c/microsoft-logo.svg)
+    0 50% no-repeat;
+  display: inline-block;
+  width: 25px;
+  height: 20px;
+}
+#login-apple {
+  background: url(https://d2k1ftgv7pobq7.cloudfront.net/meta/c/p/res/images/6fc4ecf05a97cfb43cfcbb14738a5aa0/apple-logo-black.svg);
+  background-repeat: no-repeat;
+  display: inline-block;
+  background-size: 100% 100%;
+  width: 20px;
+  height: 20px;
+}
+#register {
+  color: #76a2e4;
+  text-decoration: none;
+}
+.body {
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+  background-color: rgb(173, 194, 227);
+}
+#have-account {
+  margin-top: 15px;
+}
