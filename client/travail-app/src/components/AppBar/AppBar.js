@@ -22,7 +22,7 @@ function AppBar() {
               </div>
               <div
                 className="item home"
-                onClick={() => history("/", { replace: true })}
+                onClick={() => history("/home", { replace: true })}
               >
                 <i className="fa fa-home" />
               </div>
